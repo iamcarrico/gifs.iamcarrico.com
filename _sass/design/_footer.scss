@@ -1,0 +1,35 @@
+/**
+ * The footer partial.
+ */
+
+footer {
+  background-color: lighten(gray, 40%);
+  width: 100%;
+
+  .inner {
+    @extend %max-width;
+    @extend %clearfix;
+
+    padding: 0 .5em 1em;
+    font-size: 1.05em;
+  }
+
+
+  .contact {
+
+
+    a {
+      float: left;
+      clear: left;
+      padding: .15em 0;
+      margin-bottom: .25em;
+      width: auto;
+    }
+  }
+
+  .copyright {
+    padding: .25em 0;
+    display: block;
+    clear: both;
+  }
+}

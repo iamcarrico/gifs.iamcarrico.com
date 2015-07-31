@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="blog-post full">
+  <h1 class="title">{{ page.title }}</h1>
+  <div class="metadatas">
+    <span class="categories">
+      {% for category in page.categories %}<span class="category">{{ category }}</span> {% endfor %}
+    </span>&nbsp;-&nbsp;
+    <span class="date">{{page.date | date: "%Y-%m-%d"}}</span>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+  <div class="recipie-card">
+    <div class="recipie-card--ingredients">
+      <ul>
+        {% for ingredient in page.ingredients %}
+          <li>{{ ingredient.amount }} {{ ingredient.unit }} &mdash; {{ ingredient.ingredient }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="recipie-card--directions">
+      <ol>
+        {% for direction in page.directions %}
+          <li>{{ direction }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</article>

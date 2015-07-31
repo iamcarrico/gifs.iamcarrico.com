@@ -1,0 +1,21 @@
+{
+  "name": "gifs.iamcarrico",
+  "version": "1.0.0",
+  "homepage": "http://gifs.iamcarrico.com",
+  "repository": "https://github.com/iamcarrico/gifs.iamcarrico.com",
+  "description": "A place for me to keep my recipies that I use a lot.",
+  "author": {
+    "name": "Ian Carrico",
+    "email": "github@iancarrico.com",
+    "url": "https://github.com/iamcarrico"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-gh-pages": "^0.3.3",
+    "gulp-poole": "git://github.com/iamcarrico/gulp-poole.git#master",
+    "run-sequence": "^0.3.6"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

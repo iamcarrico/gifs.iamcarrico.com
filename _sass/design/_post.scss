@@ -1,0 +1,25 @@
+/**
+ * The blog post partial.
+ */
+
+.blog-post {
+
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    line-height: 1.1;
+  }
+
+  .hero-image {
+    margin-top: 1em;
+  }
+
+  &.full {
+    float: left;
+    width: 100%;
+  }
+
+  &.teaser {
+    margin-bottom: 40px;
+  }
+}

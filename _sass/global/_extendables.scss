@@ -1,0 +1,19 @@
+////////////////////////
+// Extendables Partials
+//
+// All of your extendable classes, ids, and placeholder extendables
+//   should go in this file.
+////////////////////////
+
+%clearfix {
+	&:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%max-width {
+  max-width: 50em;
+  margin: 0 auto 0;
+}

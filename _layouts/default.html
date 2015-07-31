@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-us"> <!--<![endif]-->
+<head>
+  {% include head.html %}
+
+  {% include header.html %}
+
+  <main role="main" {% if page.css_id %}id="{{ page.css_id }}"{% endif %}>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  {% include analytics.html %}
+
+  <script>{% asset footer %}</script>
+</body>
+</html>

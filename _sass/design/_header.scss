@@ -1,0 +1,67 @@
+/**
+ * The header partial.
+ */
+
+header {
+  @extend %clearfix;
+  @extend %max-width;
+  position: relative;
+
+  .title {
+    float: left;
+    width: 75%;
+    font-size: 4em;
+    line-height: 1em;
+    margin: 0;
+
+    .word {
+      display: block;
+    }
+
+    a,
+    a:link,
+    a:visited {
+      color: $black;
+    }
+
+    @media (min-width: 33.25em) {
+      margin-top: 1em;
+      .word {
+        display: inline;
+      }
+    }
+  }
+
+  nav {
+    width: 25%;
+    float: right;
+
+    .menubar,
+    .menuitem {
+      display: block;
+      margin-bottom: .5em;
+      padding-right: .25em;
+      width: 100%;
+      text-align: right;
+    }
+
+    @media (min-width: 23em) {
+      width: 100%;
+      position: absolute;
+
+      .menuitem {
+        display: inline-block;
+        width: auto;
+        margin-left: .75em;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    @media (min-width: 33.25em) {
+      margin: 1em 1em 0 0;
+    }
+  }
+}
